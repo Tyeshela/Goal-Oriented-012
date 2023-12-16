@@ -1,0 +1,21 @@
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.counter {
+  margin: 20px;
+  display: inline-block;
+}
+
+.counter button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.counter span {
+  width: 50px;
+  display: inline-block;
+  margin: 0 10px;
+}

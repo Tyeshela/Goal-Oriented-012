@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+</head>
+<body>
+    <div id="outer">
+        Outer Div
+        <div id="inner">
+            Inner Div
+        </div>
+    </div>
+
+    <script>
+        const outerDiv = document.getElementById('outer')
+        const innerDiv = document.getElementById('inner')
+
+        outerDiv.addEventListener('click', () => {
+            console.log('Outer Div Event Handler Triggered')
+        })
+
+        innerDiv.addEventListener('click', () => {
+            console.log('Inner Div Event Handler Triggered')
+        })
+    </script>
+</body>
+</html>

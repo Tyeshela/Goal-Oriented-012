@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color on Button Click</title>
+</head>
+<body>
+    <button id="changeColorButton">Change Color</button>
+    <div id="contentArea" style="width: 200px; height: 200px;"></div>
+
+    <script>
+        const changeColorButton = document.getElementById('changeColorButton');
+        const contentArea = document.getElementById('contentArea');
+        const colors = ['lightblue', 'lightgreen', 'lightcoral'];
+        let currentIndex = 0;
+
+        changeColorButton.addEventListener('click', () => {
+            contentArea.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % color.length;
+        });
+    </script>
+</body>
+</html>

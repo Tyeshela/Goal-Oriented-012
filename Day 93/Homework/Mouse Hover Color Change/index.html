@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Color Change</title>
+    <style>
+        #hoverDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="hoverDiv"></div>
+    
+    <script>
+        const hoverDiv = document.getElementById('hoverDiv');
+
+        hoverDiv.addEventListener('mouseenter', () => {
+            hoverDiv.style.backgroundColor = 'lightgreen';
+        });
+
+        hoverDiv.addEventListener('mouseleave', () => {
+            hoverDiv.style.backgroundColor = 'lightblue';
+        });
+    </script>
+</body>
+</html>

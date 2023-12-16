@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "core-js": "^3.34.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+}
